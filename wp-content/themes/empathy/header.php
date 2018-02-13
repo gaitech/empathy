@@ -30,7 +30,7 @@
 				<header class="top_header">
 					<div class="soundcloud">
 						<div class="soundcloud_logo">
-							<img src="/empathy/wp-content/uploads/2018/02/cloud.png">
+							<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/cloud.png">
 						</div>
 						<div class="soundcloud_text">
 							<p class="text1">Scorpions</p>
@@ -40,7 +40,7 @@
 					<div class="soundcloud_2">
 						<div class="music_player">
 							<div class="music_player__img">
-								<img src="/empathy/wp-content/uploads/2018/02/play_music.jpg">
+								<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/play_music.jpg">
 							</div>
 							<div class="play_time">
 								<p>04:36 / 05:16</p>

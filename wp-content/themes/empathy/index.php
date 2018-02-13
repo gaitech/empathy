@@ -21,7 +21,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="navigation">
 			<div class="site_logo">
-			<img src="/empathy/wp-content/uploads/2018/02/logo.jpg">
+			<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
 			</div>
 			<div class="navbar">
 				<ul class="menu">
@@ -33,7 +33,7 @@ get_header(); ?>
 		<section class="banner_section">
 			<div class="banner_img">
 				<figure>
-					<img src="/empathy/wp-content/uploads/2018/02/banner2.jpg">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/banner2.jpg">
 				</figure>
 			</div>
 			<div class="banner_heading">
@@ -44,7 +44,7 @@ get_header(); ?>
 		<section class="countries_real__stories">
 			<div class="real_stories">
 				<figure>
-					<img src="/empathy/wp-content/uploads/2018/02/boy-256.png">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/boy-256.png">
 				</figure>
 				<h1>Guru Singer</h1>
 				<p><a href="#">Psycology</a></p>
@@ -58,7 +58,7 @@ get_header(); ?>
 				</div>
 				<div class="real_stories">
 					<figure>
-						<img src="/empathy/wp-content/uploads/2018/02/boy-256.png">
+						<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/boy-256.png">
 					</figure>
 					<h1>Guru Singer</h1>
 					<p><a href="#">Psycology</a></p>
@@ -72,7 +72,7 @@ get_header(); ?>
 					</div>
 					<div class="real_stories">
 						<figure>
-							<img src="/empathy/wp-content/uploads/2018/02/boy-256.png">
+							<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/boy-256.png">
 						</figure>
 						<h1>Guru Singer</h1>
 						<p><a href="#">Psycology</a></p>
@@ -101,7 +101,7 @@ get_header(); ?>
 							</div>
 							<div class="real_stories">
 								<figure>
-									<img src="/empathy/wp-content/uploads/2018/02/boy-256.png">
+									<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/boy-256.png">
 								</figure>
 								<h1>Guru Singer</h1>
 								<p><a href="#">Psycology</a></p>
@@ -115,7 +115,7 @@ get_header(); ?>
 								</div>
 								<div class="real_stories">
 									<figure>
-										<img src="/empathy/wp-content/uploads/2018/02/boy-256.png">
+										<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/boy-256.png">
 									</figure>
 									<h1>Guru Singer</h1>
 									<p><a href="#">Psycology</a></p>
