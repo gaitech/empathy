@@ -17,47 +17,34 @@
 
 get_header(); ?>
 
-<div class="slideshow-container">
-		<div class="mySlides fade">
-			<img src= "http://localhost/empathy/wp-content/uploads/2018/02/44741872_l-e1453837450232.jpg" style="width:100%">
-			<div class="text">
-				<h1>Empathy</h1>
-				<p>by Rabindranath Tagore</p>
+<div class="body_content">
+	<div class="container">
+		<div class="navigation">
+			<div class="site_logo">
+				<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
+			</div>
+			<div class="navbar">
+				<ul class="menu">
+					<li>Empthylist</li>
+					<li>Countries</li>
+				</ul>
 			</div>
 		</div>
-	</div>
-	<br>
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1)"></span> 
-	</div>
-	<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {slideIndex = 1}    
-				if (n < 1) {slideIndex = slides.length}
-					for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					}
-					for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					}
-					slides[slideIndex-1].style.display = "block";  
-					dots[slideIndex-1].className += " active";
-				}
-			</script>
+		<section class="banner_section">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="images/slide1.jpg" style="width:100%">
+					<div class="text">
+						<h1>Empathy</h1>
+						<p>by Rabindranath Tagore</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+			</div>
+		</section>
 		<section class="countries_real__stories">
 			<?php $query = new WP_Query( array( 'post_type' => 'story', 'order'=>'DESC', 'posts_per_page'=>-1, 'paged' => $paged ) );
 
