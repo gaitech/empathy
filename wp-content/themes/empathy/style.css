@@ -195,11 +195,13 @@ body {
 .countries_real__stories {
   display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
 }
 /* line 168, ../sass/_header/_header.scss */
 .countries_real__stories .real_stories {
   padding-right: 15px;
   margin-bottom: 15px;
+  width: 33%;
 }
 /* line 171, ../sass/_header/_header.scss */
 .countries_real__stories .real_stories:last-child {
