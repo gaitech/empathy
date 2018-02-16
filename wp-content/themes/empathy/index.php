@@ -17,30 +17,47 @@
 
 get_header(); ?>
 
-<div class="body_content">
-	<div class="container">
-		<div class="navigation">
-			<div class="site_logo">
-				<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
-			</div>
-			<div class="navbar">
-				<ul class="menu">
-					<li>Empthylist</li>
-					<li>Countries</li>
-				</ul>
+<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src= "http://localhost/empathy/wp-content/uploads/2018/02/44741872_l-e1453837450232.jpg" style="width:100%">
+			<div class="text">
+				<h1>Empathy</h1>
+				<p>by Rabindranath Tagore</p>
 			</div>
 		</div>
-		<section class="banner_section">
-			<div class="banner_img">
-				<figure>
-					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/banner2.jpg">
-				</figure>
-			</div>
-			<div class="banner_heading">
-				<h1>Empathy</h1>
-				<p>by Rabindernath Tagore</p>
-			</div>
-		</section>
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+	</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+			</script>
 		<section class="countries_real__stories">
 			<?php $query = new WP_Query( array( 'post_type' => 'story', 'order'=>'DESC', 'posts_per_page'=>-1, 'paged' => $paged ) );
 
@@ -80,7 +97,7 @@ get_header(); ?>
 					<!-- <p>JANUARY 2.2018</p> -->
 					<p class="content"><?php $des = substr($content, 0 , 250); echo $des; ?></p>
 					<div class="read_more">
-						<button><a href="<?php echo esc_url( get_permalink( $id ) ); ?>">READ MORE</a></button>
+						<a href="<?php echo esc_url( get_permalink( $id ) ); ?>"><button>READ MORE</button></a>
 					</div>
 				</div>
 				<?php } ?>
