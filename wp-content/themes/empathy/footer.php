@@ -22,29 +22,34 @@
 				</figure>
 			</div>
 			<div class="txt">
-				<p>kakak kakak kakak</p>
-				<p>kakak kakak kakak</p>
+				<?php if ( is_active_sidebar( 'sidebar-5' ) ) { ?>
+			           <div class="widget-column footer-widget-5">
+				           <?php dynamic_sidebar( 'sidebar-5' ); ?>
+			           </div>
+		        <?php } ?>
 			</div>
 		</div>
 		<div class="menu_footer">
 			<div class="footer_menu">
-				<ul>
-					<li>Home</li>
-					<li>About The Empathy Network</li>
-					<li>TEN Members</li>
-					<li>Contact</li>
-				</ul>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) { ?>
+			           <div class="widget-column footer-widget-1">
+				           <?php dynamic_sidebar( 'sidebar-2' ); ?>
+			           </div>
+		        <?php } ?>
 			</div>
 			<div class="footer_menu2">
-				<ul>
-					<li>Usage Policy</li>
-					<li>Private Police</li>
-					<li>Tearms of Use</li>
-					<li>Assocution</li>
-				</ul>
+				<?php if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
+			           <div class="widget-column footer-widget-2">
+				           <?php dynamic_sidebar( 'sidebar-3' ); ?>
+			           </div>
+		        <?php } ?>
 			</div>
 			<div class="copyrights">
-				<p>Copyright @ 2018 TheEmpathyNetwork All rights reserved</p>
+				<p><?php if ( is_active_sidebar( 'sidebar-6' ) ) { ?>
+			           <div class="widget-column footer-widget-6">
+				           <?php dynamic_sidebar( 'sidebar-6' ); ?>
+			           </div>
+		        <?php } ?></p>
 			</div>
 		</div>
 	</div>
