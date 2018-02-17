@@ -19,19 +19,8 @@ get_header(); ?>
 
 <div class="body_content">
 	<div class="container">
-		<div class="navigation">
-			<div class="site_logo">
-				<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
-			</div>
-			<div class="navbar">
-				<ul class="menu">
-					<li>Empthylist</li>
-					<li>Countries</li>
-				</ul>
-			</div>
-		</div>
 		<section class="banner_section">
-			<div class="slideshow-container">
+			<div class="container">
 				<div class="mySlides fade">
 					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/banner2.jpg" style="width:100%">
 					<div class="text">

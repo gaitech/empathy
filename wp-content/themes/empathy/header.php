@@ -54,3 +54,25 @@
 				</header>
 			</div>	 
 		</section>
+		<div class="container">
+			<div class="navigation">
+				<div class="site_logo">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
+				</div>
+				<div class="navbar">
+					Countries
+					<select name="country" id="country">
+						<option value="">Select Country</option>
+						<?php $country_data = $wpdb->get_results("SELECT * from wp_countries");
+						foreach($country_data as $key => $country) {
+							$id = $country->id;
+							$shortname = $country->shortname;
+							$name = $country->name; ?>
+
+							<option value="<?php echo $shortname; ?>"><?php echo $name; ?></option>
+
+						<?php } ?>
+					</select>
+				</div>
+			</div> 	
+		</div>

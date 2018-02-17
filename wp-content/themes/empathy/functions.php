@@ -5,6 +5,12 @@ function empathy_enqueue_child_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+function my_scripts_method() { 
+	wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ) ); 
+	wp_enqueue_script( 'custom-js-script', get_stylesheet_directory_uri() . '/library/jquery/jquery.min.js', array( 'jquery' ) ); 
+} 
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+
 function empathy_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Home Block', 'twentyseventeen' ),
