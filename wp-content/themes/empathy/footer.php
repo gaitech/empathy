@@ -18,7 +18,7 @@
 		<div class="logo_footer">
 			<div class="logo">
 				<figure>
-					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo-theempathynetwork.png">
 				</figure>
 			</div>
 			<div class="txt">
