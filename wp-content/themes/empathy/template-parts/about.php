@@ -126,8 +126,7 @@ get_header(); ?>
   				<div class="our_associations__partners">
   					<div class="partners_img">
   						<figure>
-  							<img src="images/member.png">
-  							<img src="images/member2.png">
+        <?php if(function_exists('get_awesome_logos')){ get_awesome_logos('1'); }?>
   						</figure>
   					</div>
   				</div>
