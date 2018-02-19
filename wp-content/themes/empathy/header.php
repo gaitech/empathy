@@ -60,9 +60,9 @@
 					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo.jpg">
 				</div>
 				<div class="navbar">
-					Countries
+					
 					<select name="country" id="country">
-						<option value="">Select Country</option>
+						<option value="">Countries</option>
 						<?php $country_data = $wpdb->get_results("SELECT * from wp_countries");
 						foreach($country_data as $key => $country) {
 							$id = $country->id;
