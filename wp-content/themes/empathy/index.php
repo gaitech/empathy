@@ -22,11 +22,11 @@ get_header(); ?>
 		<section class="banner_section">
 			<div class="container">
 				<div class="mySlides fade">
-					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/banner2.jpg" style="width:100%">
-					<div class="text">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/homepageSlider.png" style="width:100%">
+					<!-- <div class="text">
 						<h1>Empathy</h1>
 						<p>by Rabindranath Tagore</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<br>
