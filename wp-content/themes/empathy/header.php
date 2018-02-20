@@ -57,7 +57,7 @@
 		<div class="container">
 			<div class="navigation">
 				<div class="site_logo">
-					<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo-theempathynetwork.png">
+					<a href="<?php echo esc_url(home_url('/') ); ?>"><img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/logo-theempathynetwork.png"></a>
 				</div>
 				<div class="navbar">
 					

@@ -53,3 +53,5 @@ function empathy_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'empathy_widgets_init' );
+
+
