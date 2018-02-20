@@ -249,27 +249,18 @@ body {
     margin: 0;
 }
 .alm-btn-wrap {
-    text-align: left;
-    padding: 0;
-    margin-top: 24px;
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 24px 0 0 0;
 }
-.alm-btn-wrap .alm-load-more-btn {
-    font-size: 12px;
-    font-weight: normal;
-    background: #fff;
-    color: #111;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-    padding-top: 20px;
-    font-size: 14px;
-    margin: 0;
-    display: inline-block;
-    position: relative;
+.alm-load-more-btn {
+    background-color: #fff !important;
+    color: #111 !important;
+    font-weight: normal !important;
 }
-alm-btn-wrap .alm-load-more-btn:hover {
-    background-color: #fff;
-    color: #111;
+.alm-load-more-btn:hover {
+    background-color: #fff !important;
+    color: #fff !important;
     text-decoration: none;
 }
 

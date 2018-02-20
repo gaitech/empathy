@@ -115,9 +115,6 @@ get_header(); ?>
 					<?php } ?>
 					<div class="more_story">
 						<?php echo do_shortcode('[ajax_load_more container_type="div" css_classes="countries_real__stories" post_type="story" posts_per_page="3" meta_key="field_of_work" meta_value="" meta_compare="IN" offset="3" scroll="false" transition_speed="1" button_label="More Stories"]');?>
-						<div class="read_more">
-							<p><a href="#">MORE STORIES</a></p>
-					   </div>
 				</section>
 
 			</div>
