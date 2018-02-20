@@ -254,13 +254,14 @@ body {
     margin: 24px 0 0 0;
 }
 .alm-load-more-btn {
+    font-size: 14px;
     background-color: #fff !important;
     color: #111 !important;
     font-weight: normal !important;
 }
 .alm-load-more-btn:hover {
     background-color: #fff !important;
-    color: #fff !important;
+    color: #111 !important;
     text-decoration: none;
 }
 
