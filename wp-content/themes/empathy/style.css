@@ -241,6 +241,39 @@ body {
   padding-right: 0;
 }
 
+.real_stories img {
+    width: 100%;
+}
+.real_stories p {
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+.alm-btn-wrap {
+    text-align: left;
+    padding: 0;
+    margin-top: 24px;
+}
+.alm-btn-wrap .alm-load-more-btn {
+    font-size: 12px;
+    font-weight: normal;
+    background: #fff;
+    color: #111;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+alm-btn-wrap .alm-load-more-btn:hover {
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+}
+
+
 
 .countries_real__stories .real_stories h1 {
   text-align: center;
@@ -273,6 +306,7 @@ body {
 .countries_real__stories .real_stories .read_more {
   text-align: center;
   text-align: -webkit-center;
+  margin-top: 24px;
 }
 
 .countries_real__stories .real_stories .read_more button {
@@ -491,7 +525,7 @@ figure {
   transition: background-color 0.6s ease;
   }*/
 
-  .mySlides.fade:nth-child(2) {
+.mySlides.fade:nth-child(2) {
     display: none;
 }
 .mySlides.fade:nth-child(3) {
