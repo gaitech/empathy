@@ -120,12 +120,14 @@ get_header(); ?>
         <img src="<?php echo $image; ?>">
       </figure>
       <h4><a href="#"><?php echo $name; ?></a></h4>
-      <div class="social_link"><?php if ($linkedin) { ?>
-        <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png">
+      <div class="social_link"><?php if ($twitter) { ?>
+        <a href="<?php echo $twitter; ?>">
+        <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
+        </a>
         <?php
       } ?>
-      <?php if ($twitter) { ?>
-      <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
+      <?php if ($linkedin) { ?><a href="<?php echo $twitter; ?>">
+      <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png"></a>
       <?php
     } ?>
   </div>
