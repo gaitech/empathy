@@ -155,7 +155,7 @@ get_header(); ?>
       ?>
           <div class="member_name">
             <ul>
-              <li><span><?php echo $personName; ?><a href="<?php echo $organisation_url; ?>" target="blank" >
+              <li><span><?php echo $personName; ?><?php if($organisation_url) { ?><a href="<?php echo $organisation_url; ?>" target="blank" > <?php } ?>
                 <?php if ($organisation_name) {  echo '('.$organisation_name.')'; } ?></a>
                   
                 </span></li>
