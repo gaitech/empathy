@@ -124,9 +124,8 @@ get_header(); ?>
         <a href="<?php echo $twitter; ?>">
         <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
         </a>
-        <?php
-      } ?>
-      <?php if ($linkedin) { ?><a href="<?php echo $twitter; ?>">
+        <?php } ?>
+      <?php if ($linkedin) { ?><a href="<?php echo $linkedin; ?>">
       <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png"></a>
       <?php
     } ?>
