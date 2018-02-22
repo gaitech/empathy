@@ -30,7 +30,7 @@ get_header(); ?>
   					</div>
   				</div>
   			</div> -->
-        <?php $query = new WP_Query( array( 'post_type' => 'about_slider', 'order'=>'DESC', 'posts_per_page'=>-1, 'paged' => $paged) );
+        <?php $query = new WP_Query( array( 'post_type' => 'about_slider', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged) );
 
         foreach ($query->posts as $key => $value) {
           $name = $value->post_title;
@@ -81,7 +81,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="our_mission">
-  <?php $query = new WP_Query( array( 'post_type' => 'about_mission', 'order'=>'DESC', 'posts_per_page'=>-1, 'paged' => $paged ) );
+  <?php $query = new WP_Query( array( 'post_type' => 'about_mission', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
   foreach ($query->posts as $key => $value) {
     $name = $value->post_title;
     $id = $value->ID;
@@ -105,7 +105,7 @@ get_header(); ?>
   </div>
   <div class="our_team__block">
     <?php
-    $query = new WP_Query( array( 'post_type' => 'team_member', 'order'=>'DESC', 'posts_per_page'=>-1, 'paged' => $paged ) );
+    $query = new WP_Query( array( 'post_type' => 'team_member', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
 
     foreach ($query->posts as $key => $value) {
       $name = $value->post_title;
