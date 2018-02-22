@@ -121,11 +121,11 @@ get_header(); ?>
       </figure>
       <h4><a href="#"><?php echo $name; ?></a></h4>
       <div class="social_link"><?php if ($twitter) { ?>
-        <a href="<?php echo $twitter; ?>">
+        <a href="<?php echo $twitter; ?>" target="blank" >
         <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
         </a>
         <?php } ?>
-      <?php if ($linkedin) { ?><a href="<?php echo $linkedin; ?>">
+      <?php if ($linkedin) { ?><a href="<?php echo $linkedin; ?>" target="blank">
       <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png"></a>
       <?php
     } ?>

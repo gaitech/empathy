@@ -82,6 +82,7 @@ get_header(); ?>
 				$image = wp_get_attachment_url( get_post_thumbnail_id( $id ) );
 				$custom_cont = get_post_meta($id, '', TRUE);
 				$field_of_work = $custom_cont['field_of_work'][0];
+				$detail_page_image = $custom_cont['detail_page_image_ideal_min_dimensions_2118x1050'][0];
 				$country = $custom_cont['country'][0];
 				$website_one = $custom_cont['website_one'][0];
 				$website_two = $custom_cont['website_two'][0];
