@@ -586,7 +586,7 @@ figure {
   }
 
   .body_content .container .banner .world_text {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .body_content .container .banner .world_text p {
@@ -632,19 +632,6 @@ figure {
     width: 100%;
     padding-bottom: 50px;
   }
-
-  .body_content .container .banner .world_text {
-    padding-bottom: 30px;
-  }
-
-
-  .body_content .container .banner .world_text p {
-    text-align: center;
-    font-size: 24px;
-    line-height: 40px;
-    margin: 0;
-  }
-
 
   /*Slider css*/
   /* Slideshow container */
