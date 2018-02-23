@@ -132,7 +132,7 @@ get_header(); ?>
     <div class="container">
       <div class="gratitude_heading">
         <h1>GRATiTUDE</h1>
-        <p>We are greatful to these people for their contribution, assistance and constant support</p>
+        <p>We are grateful to these people for their contribution, assistance and constant support</p>
       </div>
       <div class="gratitude_member__block">
 

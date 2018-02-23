@@ -879,9 +879,12 @@ figure {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: #ed8b18;
   font-size: 24px;
+}
+.wps_logo_slide_item:hover span.logos_overlay, .wps_logo_slide_item:hover div.meta {
+    opacity: 0 !important;
 }
 
 .body_content .our_officel__partners .our_associations .our_associations__partners {
