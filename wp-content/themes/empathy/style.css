@@ -884,16 +884,21 @@ figure {
   font-size: 24px;
 }
 .wps_logo_slide_item:hover span.logos_overlay, .wps_logo_slide_item:hover div.meta {
-    opacity: 0 !important;
+  opacity: 0 !important;
 }
 
 .body_content .our_officel__partners .our_associations .our_associations__partners {
   text-align: center;
 }
 
+#slider1_container {
+  margin: 0 auto;
+}
+
 .body_content .our_officel__partners .our_associations .our_associations__partners img {
   height: 100px;
 }
+
 .container {
   width: 1180px;
   margin: 0 auto;
