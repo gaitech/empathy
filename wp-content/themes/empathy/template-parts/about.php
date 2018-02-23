@@ -50,120 +50,112 @@ get_header(); ?>
         <div class="container">
           <div class="mySlides fade">
             <img src="<?php echo $image_one; ?>" style="width:100%">
-            <div class="text">
-<!-- 				<h1>Empathy</h1>
-  <p>by Rabindranath Tagore</p> -->
-</div>
-</div>
+          </div>
 
-<div class="mySlides fade">
- <img src="<?php echo $image_two; ?>" style="width:100%">
- <div class="text">
-<!-- 				<h1>Empathy</h1>
-  <p>by Rabindranath Tagore</p> -->
-</div>
-</div>
+          <div class="mySlides fade">
+           <img src="<?php echo $image_two; ?>" style="width:100%">
+         </div>
 
-<div class="mySlides fade">
- <img  src="<?php echo $image_three; ?>" style="width:100%">
- <div class="text">
-<!-- 				<h1>Empathy</h1>
-  <p>by Rabindranath Tagore</p> -->
-</div>
-</div>
-</div>
-<div class="slideshow-container">
-  <div class="slider-button">
-    <div class="dotslider" onclick="currentSlide(1)"><?php echo $image_one_Text; ?></div> 
-    <div class="dotslider" onclick="currentSlide(2)"><?php echo $image_two_Text; ?></div> 
-    <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_three_Text; ?></div>
-    <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_four_Text; ?></div>  
-  </div>
-</div>
-<div class="our_mission">
-  <?php $query = new WP_Query( array( 'post_type' => 'about_mission', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
-  foreach ($query->posts as $key => $value) {
-    $name = $value->post_title;
-    $id = $value->ID;
-    $content = $value->post_content;
-    $url = get_post_permalink( $id);
-    $image = wp_get_attachment_url( get_post_thumbnail_id( $id ) );
-    $custom_cont = get_post_meta($id, '', TRUE);
-    ?>
-    <div class="our_goals">
-     <h1><?php echo $name; ?></h1>
-     <p><?php echo $content; ?></p>
+         <div class="mySlides fade">
+           <img  src="<?php echo $image_three; ?>" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+           <img  src="<?php echo $image_four; ?>" style="width:100%">
+         </div>
+       </div>
+       <div class="slideshow-container">
+        <div class="slider-button">
+          <div class="dotslider" onclick="currentSlide(1)"><?php echo $image_one_Text; ?></div> 
+          <div class="dotslider" onclick="currentSlide(2)"><?php echo $image_two_Text; ?></div> 
+          <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_three_Text; ?></div>
+          <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_four_Text; ?></div>  
+        </div>
+      </div>
+      <div class="our_mission">
+        <?php $query = new WP_Query( array( 'post_type' => 'about_mission', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
+        foreach ($query->posts as $key => $value) {
+          $name = $value->post_title;
+          $id = $value->ID;
+          $content = $value->post_content;
+          $url = get_post_permalink( $id);
+          $image = wp_get_attachment_url( get_post_thumbnail_id( $id ) );
+          $custom_cont = get_post_meta($id, '', TRUE);
+          ?>
+          <div class="our_goals">
+           <h1><?php echo $name; ?></h1>
+           <p><?php echo $content; ?></p>
+         </div>
+         <?php } ?>
+       </div>
+     </section>
    </div>
-   <?php } ?>
- </div>
-</section>
-</div>
-<section class="our_team__section">
-  <a name="ten_member"></a>
-  <div class="container">
-   <div class="our_team__heading">
-    <h1>ten circle</h1>
-  </div>
-  <div class="our_team__block">
-    <?php
-    $query = new WP_Query( array( 'post_type' => 'team_member', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
-
-    foreach ($query->posts as $key => $value) {
-      $name = $value->post_title;
-      $id = $value->ID;
-      $image = wp_get_attachment_url( get_post_thumbnail_id( $id ) );
-      $custom_cont = get_post_meta($id, '', TRUE);
-      $linkedin = $custom_cont['linkedin'][0];
-      $twitter = $custom_cont['twitter'][0];
-      ?>
-      <div class="team_blocks">
-       <figure class="team_member__img">
-        <img src="<?php echo $image; ?>">
-      </figure>
-      <h4><a href="#"><?php echo $name; ?></a></h4>
-      <div class="social_link"><?php if ($twitter) { ?>
-        <a href="<?php echo $twitter; ?>" target="blank" >
-        <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
-        </a>
-        <?php } ?>
-      <?php if ($linkedin) { ?><a href="<?php echo $linkedin; ?>" target="blank">
-      <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png"></a>
-      <?php
-    } ?>
-  </div>
-</div>
-<?php } ?>
-</div>
-</div>
-</section>
-<div class="gratitude_section">
-  <div class="container">
-    <div class="gratitude_heading">
-      <h1>GRATiTUDE</h1>
-      <p>We are greatful to these people for their contribution, assistance and constant support</p>
+   <section class="our_team__section">
+    <a name="ten_member"></a>
+    <div class="container">
+     <div class="our_team__heading">
+      <h1>ten circle</h1>
     </div>
-    <div class="gratitude_member__block">
-     
-        <div class="gratitude_member__name">
-           <?php $query = new WP_Query( array( 'post_type' => 'gratitude_block', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged) );
+    <div class="our_team__block">
+      <?php
+      $query = new WP_Query( array( 'post_type' => 'team_member', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged ) );
 
       foreach ($query->posts as $key => $value) {
+        $name = $value->post_title;
         $id = $value->ID;
+        $image = wp_get_attachment_url( get_post_thumbnail_id( $id ) );
         $custom_cont = get_post_meta($id, '', TRUE);
-        $personName = $custom_cont['person_name'][0];
-        $organisation_name = $custom_cont['organization_name'][0];
-        $organisation_url = $custom_cont['organization_url'][0];
+        $linkedin = $custom_cont['linkedin'][0];
+        $twitter = $custom_cont['twitter'][0];
+        ?>
+        <div class="team_blocks">
+         <figure class="team_member__img">
+          <img src="<?php echo $image; ?>">
+        </figure>
+        <h4><a href="#"><?php echo $name; ?></a></h4>
+        <div class="social_link"><?php if ($twitter) { ?>
+          <a href="<?php echo $twitter; ?>" target="blank" >
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/twitter.png">
+          </a>
+          <?php } ?>
+          <?php if ($linkedin) { ?><a href="<?php echo $linkedin; ?>" target="blank">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/linkedin.png"></a>
+              <?php
+            } ?>
+          </div>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </section>
+  <div class="gratitude_section">
+    <div class="container">
+      <div class="gratitude_heading">
+        <h1>GRATiTUDE</h1>
+        <p>We are greatful to these people for their contribution, assistance and constant support</p>
+      </div>
+      <div class="gratitude_member__block">
+       
+        <div class="gratitude_member__name">
+         <?php $query = new WP_Query( array( 'post_type' => 'gratitude_block', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged) );
+
+         foreach ($query->posts as $key => $value) {
+          $id = $value->ID;
+          $custom_cont = get_post_meta($id, '', TRUE);
+          $personName = $custom_cont['person_name'][0];
+          $organisation_name = $custom_cont['organization_name'][0];
+          $organisation_url = $custom_cont['organization_url'][0];
         // $twitter = $custom_cont['twitter'][0];
-      ?>
+          ?>
           <div class="member_name">
             <ul>
               <li><span><?php echo $personName; ?><?php if($organisation_url) { ?><a href="<?php echo $organisation_url; ?>" target="blank" > <?php } ?>
                 <?php if ($organisation_name) {  echo '('.$organisation_name.')'; } ?></a>
-                  
-                </span></li>
+                
+              </span></li>
             </ul>
           </div>
-       <?php } ?>
+          <?php } ?>
         </div>
       </div>
     </div>
