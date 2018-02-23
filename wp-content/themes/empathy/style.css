@@ -538,6 +538,9 @@ figure {
   .mySlides.fade:nth-child(3) {
     display: none;
   }
+  .mySlides.fade:nth-child(4) {
+    display: none;
+  }
 
   .active, .dot:hover {
     background-color: #717171;

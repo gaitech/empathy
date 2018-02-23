@@ -69,7 +69,7 @@ get_header(); ?>
           <div class="dotslider" onclick="currentSlide(1)"><?php echo $image_one_Text; ?></div> 
           <div class="dotslider" onclick="currentSlide(2)"><?php echo $image_two_Text; ?></div> 
           <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_three_Text; ?></div>
-          <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_four_Text; ?></div>  
+          <div class="dotslider" onclick="currentSlide(4)"><?php echo $image_four_Text; ?></div>  
         </div>
       </div>
       <div class="our_mission">
@@ -135,7 +135,7 @@ get_header(); ?>
         <p>We are greatful to these people for their contribution, assistance and constant support</p>
       </div>
       <div class="gratitude_member__block">
-       
+
         <div class="gratitude_member__name">
          <?php $query = new WP_Query( array( 'post_type' => 'gratitude_block', 'order'=>'ASC', 'posts_per_page'=>-1, 'paged' => $paged) );
 
@@ -151,7 +151,7 @@ get_header(); ?>
             <ul>
               <li><span><?php echo $personName; ?><?php if($organisation_url) { ?><a href="<?php echo $organisation_url; ?>" target="blank" > <?php } ?>
                 <?php if ($organisation_name) {  echo '('.$organisation_name.')'; } ?></a>
-                
+
               </span></li>
             </ul>
           </div>
