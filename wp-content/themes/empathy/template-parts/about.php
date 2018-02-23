@@ -74,10 +74,10 @@ get_header(); ?>
 </div>
 <div class="slideshow-container">
   <div class="slider-button">
-    <div class="dotslider" onclick="currentSlide(1)"><a href="#"><?php echo $image_one_Text; ?></a></div> 
-    <div class="dotslider" onclick="currentSlide(2)"><a href="#"><?php echo $image_two_Text; ?></a></div> 
-    <div class="dotslider" onclick="currentSlide(3)"><a href="#"><?php echo $image_three_Text; ?></a></div>
-    <div class="dotslider" onclick="currentSlide(3)"><a href="#"><?php echo $image_four_Text; ?></a></div>  
+    <div class="dotslider" onclick="currentSlide(1)"><?php echo $image_one_Text; ?></div> 
+    <div class="dotslider" onclick="currentSlide(2)"><?php echo $image_two_Text; ?></div> 
+    <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_three_Text; ?></div>
+    <div class="dotslider" onclick="currentSlide(3)"><?php echo $image_four_Text; ?></div>  
   </div>
 </div>
 <div class="our_mission">
@@ -99,6 +99,7 @@ get_header(); ?>
 </section>
 </div>
 <section class="our_team__section">
+  <a name="ten_member"></a>
   <div class="container">
    <div class="our_team__heading">
     <h1>ten circle</h1>
@@ -168,6 +169,7 @@ get_header(); ?>
     </div>
   </div>
   <section class="our_officel__partners">
+    <a name="association"></a>
     <div class="container">
      <div class="our_associations">
       <div class="our_associations__heading">
