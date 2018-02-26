@@ -947,6 +947,10 @@ figure {
 .member_name  ul li a {
   color: #3a83f4;
 }
+.wps_logos_img img {
+    width: auto !important;
+    height: 100% !important;
+}
 
 /*---------- Detail page------------*/
 .detail_banner__img {
