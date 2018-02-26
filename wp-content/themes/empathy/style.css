@@ -329,9 +329,9 @@ body {
 .more_story {
   clear: both;
   font-size: 12px;
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 0px;
 }
 .more_story p {
   margin: 0;
