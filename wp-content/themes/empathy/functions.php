@@ -1,9 +1,17 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'empathy_enqueue_child_styles', 99);
+add_action( 'wp_enqueue_scripts', 'wpb_load_fa' );
 
 function empathy_enqueue_child_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
+function wpb_load_fa() {
+ 
+wp_enqueue_style( 'wpb-fa', get_stylesheet_directory_uri() . ' /stylesheets/font-awesome.min.css' );
+ 
+}
+ 
+
 
 function my_scripts_method() { 
 	wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ) ); 
@@ -53,3 +61,5 @@ function empathy_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'empathy_widgets_init' );
+
+
