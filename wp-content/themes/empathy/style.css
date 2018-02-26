@@ -371,6 +371,11 @@ body {
   box-shadow: none;
   color: #3a83f4;
 }
+.about_empathy .textwidget a:focus {
+    box-shadow: none;
+    color: #3a83f4;
+    outline: none;
+}
 
 .footer_section {
   width: 100%;
@@ -431,6 +436,11 @@ body {
 .footer_section .menu_footer .footer_menu ul li a:hover {
   box-shadow: none;
   color: #1a1a1a;
+}
+.footer_section .menu_footer .footer_menu ul li a:focus {
+  box-shadow: none;
+  color: #1a1a1a;
+  outline: none;
 }
 
 .footer_section .menu_footer .footer_menu2 {
