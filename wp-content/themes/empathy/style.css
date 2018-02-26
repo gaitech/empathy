@@ -329,9 +329,9 @@ body {
 .more_story {
   clear: both;
   font-size: 12px;
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 0px;
 }
 .more_story p {
   margin: 0;
@@ -370,6 +370,11 @@ body {
 .about_empathy .textwidget a:hover {
   box-shadow: none;
   color: #3a83f4;
+}
+.about_empathy .textwidget a:focus {
+    box-shadow: none;
+    color: #3a83f4;
+    outline: none;
 }
 
 .footer_section {
@@ -431,6 +436,11 @@ body {
 .footer_section .menu_footer .footer_menu ul li a:hover {
   box-shadow: none;
   color: #1a1a1a;
+}
+.footer_section .menu_footer .footer_menu ul li a:focus {
+  box-shadow: none;
+  color: #1a1a1a;
+  outline: none;
 }
 
 .footer_section .menu_footer .footer_menu2 {
@@ -672,6 +682,7 @@ figure {
     position: relative;
     bottom: 6px;
     text-align: center;
+    margin-top: -1px
   }
   .slider-button a {
     color: #fff;
@@ -935,6 +946,10 @@ figure {
 }
 .member_name  ul li a {
   color: #3a83f4;
+}
+.wps_logos_img img {
+    width: auto !important;
+    height: 100% !important;
 }
 
 /*---------- Detail page------------*/
