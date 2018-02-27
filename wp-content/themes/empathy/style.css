@@ -492,7 +492,7 @@ body {
 
 
 figure {
-  margin: 0;
+  margin: 0 !important;
 }
 .slideshow-container {
   max-width: 1000px;
@@ -953,6 +953,10 @@ figure {
 }
 
 /*---------- Detail page------------*/
+.wrap {
+    max-width: 1180px !important;
+    padding: 0 !important;
+}
 .detail_banner__img {
     margin-bottom: 30px;
 }
@@ -972,14 +976,14 @@ figure {
 .members_heading h1 {
     margin: 0;
     color: #4a4a4a;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 52px;
     padding-top: 10px;
 }
 .members_heading p {
     margin: 0;
     color: #4a4a4a;
-    font-size: 12px;
+    font-size: 10px;
     margin: 10px 0 0 0;
 }
 .left-sidebar   {
@@ -987,36 +991,38 @@ figure {
     float: left;
 }
 .leadership_contant {
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
 }
 .leadership_contant h3 {
     margin: 0;
     color: #ed8b18;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
 }
 .leadership_contant p {
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 16px;
     padding: 14px 0 0px 0;
     width: 70%;
     line-height: 28px;
     color: #4a4a4a;
+    font-weight: 500;
 }
 .Organization_contant h3 {
     margin: 0;
     color: #ed8b18;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     padding: 18px 0 0 0;
 }
 .Organization_contant p {
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 16px;
     padding: 14px 0 0px 0;
     width: 70%;
     line-height: 28px;
     color: #4a4a4a;
+    font-weight: 500;
 }
 .right-sidebar {
     width: 20%;
@@ -1036,7 +1042,7 @@ figure {
 }
 .right-sidebar   ul li h5 {
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #a1a1a1;
     font-weight: 100;
     letter-spacing: 1px;
@@ -1045,7 +1051,7 @@ figure {
 .right-sidebar  ul li p {
     margin: 0 0 0 0;
     padding: 4px 0 0 0;
-    font-size: 18px;
+    font-size: 14px;
     color: #4a4a4a;
 }
 .our_youtube__video {
@@ -1058,8 +1064,12 @@ figure {
     margin: 50px 0 0 0;
 }
 .video {
-    width: 33.333333%;
+    width: 32%;
     float: left;
+    margin-left: 23px;
+}
+.video:first-child {
+    margin: 0;
 }
 .video h2 {
     text-align: center;
@@ -1077,30 +1087,42 @@ figure {
 }
 .article_heading h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     color: #111;
-    font-weight: 400;
+    font-weight: 500;
 }
 .article_heading {
     margin-bottom: 50px;
 }
 .article_blocks h2 {
   margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: #111;
-    font-weight: 400;
+    font-weight: 500;
 }
 .member_article {
     padding-bottom: 50px;
 }
 .article_blocks p {
     color: #111;
-    padding: 0 30px 0 0;
+    padding: 18px 30px 0 0;
     line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
 }
-.article_blocks a {
-    text-decoration: none;
+.article_block .article_blocks a {
+    box-shadow: none;
     color: #3a83f4;
+    font-size: 12px;
+}
+.article_block .article_blocks a:hover {
+    color: #3a83f4;
+    box-shadow: none;
+}
+.article_block .article_blocks a:focus {
+    box-shadow: none;
+    color: #3a83f4;
+    outline: none;  
 }
 .ten_members__profile {
     border-top: 1px solid #dcdcdc;
@@ -1134,11 +1156,13 @@ figure {
 }
 .profile_details span {
     color: #a1a1a1;
-    font-size: 12px;
+    font-size: 10px;
 }
 .profile_details h3 {
     margin: 0;
     padding: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
 }
 .profile_details p {
     margin: 0;
@@ -1147,12 +1171,13 @@ figure {
     font-size: 14px;
 }
 .Organization_scetion {
-   background-color: #d0eafa;
+    background-color: #d0eafa;
+    margin-bottom: 50px;
 }
 .Organization_about {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 .Organization_about p {
     text-align: center;
@@ -1163,8 +1188,4 @@ figure {
   color: #3a83f4;
   text-align: center;
   font-size: 14px;
-}
-.wrap {
-  max-width: 1180px;
-  padding: 0;
 }

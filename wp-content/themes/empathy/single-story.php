@@ -24,7 +24,10 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
-		<div class="Organization_scetion">
+		</main><!-- #main -->
+	</div><!-- #primary -->
+</div><!-- .wrap -->
+<div class="Organization_scetion">
 				<div class="container">
 					<div class="Organization_about">
                         <p><?php if ( is_active_sidebar( 'sidebar-8' ) ) { ?>
@@ -36,8 +39,5 @@ get_header(); ?>
 					</div>
 				</div>
 		</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
 
 <?php get_footer();
