@@ -1193,3 +1193,6 @@ figure {
   webkit-box-shadow: inset 0 -1px 0 rgba(58, 131, 244, 1) !important;
       box-shadow: inset 0 -1px 0 rgba(58, 131, 244, 1) !important;
 }
+.Organization_about a:hover {
+    color: #3a83f4 !important;
+}
