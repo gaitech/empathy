@@ -76,14 +76,14 @@ get_header(); ?>
               'compare' => 'LIKE'
             )
           ),
-          'posts_per_page' => 3,
+          'posts_per_page' => 6,
           'post_type' => 'story',
           'order'=>'DESC',
           'paged' => 0
         );
       } else {
         $args = array(
-          'posts_per_page' => 3,
+          'posts_per_page' => 6,
           'post_type' => 'story',
           'order'=>'DESC',
           'paged' => 0
