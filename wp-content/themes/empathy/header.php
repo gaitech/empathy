@@ -71,9 +71,17 @@
 
 							<option value="<?php echo $shortname; ?>"><?php echo $name; ?></option>
 
+
 						<?php } ?>
 					</select>
 					
 				</div>
 			</div> 	
 		</div>
+
+							<?php } ?>
+						</select>
+					</div>
+				</div> 	
+			</div>
+>
