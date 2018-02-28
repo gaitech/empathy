@@ -116,7 +116,7 @@ get_header(); ?>
 				<?php } ?>
 				<div class="more_story">
 					
-					<?php echo do_shortcode('[ajax_load_more container_type="div" css_classes="countries_real__stories" post_type="story" posts_per_page="3" meta_key="field_of_work" meta_value="" meta_compare="IN" offset="3" scroll="false" transition_speed="1" button_label="MORE STORIES"]');?>
+					<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="story" posts_per_page="3" offset="3" pause="true" scroll="false" button_label="MORE STORIES"]');?>
 					
 				</div>
 			</section>
