@@ -356,15 +356,15 @@
 						<div class="our_youtube__video">
 							<div class="members_video__speach">
 								<div class="video">
-									<iframe width="370" height="200" src="<?php echo $video_section_one; ?>"></iframe>
+									<iframe width="410" height="200" src="<?php echo $video_section_one; ?>"></iframe>
 									<caption class="video_caption"><h2><?php echo $first_video_caption; ?></h2></caption>
 								</div>
 								<div class="video">
-									<iframe width="370" height="200" src="<?php echo $video_section_two; ?>"></iframe>
+									<iframe width="410" height="200" src="<?php echo $video_section_two; ?>"></iframe>
 									<caption class="video_caption"><h2><?php echo $second_video_caption; ?></h2></caption>
 								</div>
 								<div class="video">
-									<iframe width="370" height="200" src="<?php echo $video_section_three; ?>"></iframe>
+									<iframe width="410" height="200" src="<?php echo $video_section_three; ?>"></iframe>
 									<caption class="video_caption"><h2><?php echo $third_video_caption; ?></h2></caption>
 								</div>
 							</div>

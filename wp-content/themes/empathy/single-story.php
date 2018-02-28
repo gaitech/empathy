@@ -22,9 +22,17 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content-story', get_post_format() );
 
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
 			endwhile; // End of the loop.
 			?>
-		<div class="Organization_scetion">
+		</main><!-- #main -->
+	</div><!-- #primary -->
+</div><!-- .wrap -->
+<div class="Organization_scetion">
 				<div class="container">
 					<div class="Organization_about">
                         <p><?php if ( is_active_sidebar( 'sidebar-8' ) ) { ?>
@@ -36,8 +44,5 @@ get_header(); ?>
 					</div>
 				</div>
 		</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
 
 <?php get_footer();
