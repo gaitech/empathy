@@ -78,10 +78,3 @@
 				</div>
 			</div> 	
 		</div>
-
-							<?php } ?>
-						</select>
-					</div>
-				</div> 	
-			</div>
->
