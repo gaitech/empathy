@@ -69,6 +69,26 @@ function empathy_widgets_init() {
 	    'before_title'  => '<h2 class="widget-title">',
 	    'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'First Track Block', 'twentyseventeen' ),
+		'id'            => 'sidebar-9',
+		'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	    'before_title'  => '<h2 class="widget-title">',
+	    'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Second Track Block', 'twentyseventeen' ),
+		'id'            => 'sidebar-10',
+		'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	    'before_title'  => '<h2 class="widget-title">',
+	    'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'empathy_widgets_init' );
 

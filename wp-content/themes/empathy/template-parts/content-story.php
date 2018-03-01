@@ -372,8 +372,24 @@
 						<article class="member_article">
 							<div class="article_block">
 								<div class="article_heading">
-									<h2>ARTICLE</h2>
-								</div>  
+									<h2>ARTICLES</h2>
+								</div>
+								<div class="article_blocks">
+									<?php if(($reference_article_title_one != "") && ($reference_article_body_one != "") && ($reference_article_title_two == "") && ($reference_article_body_two == "")) { ?>
+									<h2><?php echo $reference_article_title_one; ?></h2>
+									<p><?php echo $reference_article_body_one; ?></p>
+									<a href="#">Read further</a>
+									<?php } ?>
+								</div>
+								<div class="article_blocks">
+									<?php if(($reference_article_title_one == "") && ($reference_article_body_one == "") && ($reference_article_title_two != "") && ($reference_article_body_two != "")) { ?>
+									<h2><?php echo $reference_article_title_two; ?></h2>
+									<p><?php echo $reference_article_body_two; ?></p>
+									<a href="#">Read further</a>
+									<?php } ?>
+								</div>
+								
+								<?php if(($reference_article_title_one != "") && ($reference_article_body_one != "") && ($reference_article_title_two != "") && ($reference_article_body_two != "")) { ?>
 								<div class="article_blocks">
 									<h2><?php echo $reference_article_title_one; ?></h2>
 									<p><?php echo $reference_article_body_one; ?></p>
@@ -384,6 +400,8 @@
 									<p><?php echo $reference_article_body_two; ?></p>
 									<a href="#">Read further</a>
 								</div>
+								<?php } ?>
+								
 							</div>
 						</article>
 						<div class="ten_members__profile">
