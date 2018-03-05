@@ -48,17 +48,8 @@
 							<?php } ?>
 						</p>
 						<?php } ?>
-					<!-- 	<div class="soundcloud_logo">
-							<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/cloud.png">
 						</div>
-						<div class="soundcloud_text">
-							<p class="text1">Scorpions</p>
-							<p class="text2">Winds of changes</p>
-						</div> -->
 					</div>
-					<!-- <div class="soundcloud_2">
-					
-					</div -->
 				</header>
 			</div>	 
 		</section>
