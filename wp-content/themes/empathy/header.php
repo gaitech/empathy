@@ -28,17 +28,8 @@
 		<section class="header_section">
 			<div class="container">
 				<header class="top_header">
-					<div class="soundcloud">
-						<div class="soundcloud_logo">
-							<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/cloud.png">
-						</div>
-						<div class="soundcloud_text">
-							<p class="text1">Scorpions</p>
-							<p class="text2">Winds of changes</p>
-						</div>
-					</div>
 					<div class="soundcloud_2">
-						<?php 
+							<?php 
 						$data = json_decode(file_get_contents('http://ip-api.io/api/json'));
 						$country_code = $data->country_code;
 
@@ -57,7 +48,17 @@
 							<?php } ?>
 						</p>
 						<?php } ?>
+					<!-- 	<div class="soundcloud_logo">
+							<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/cloud.png">
+						</div>
+						<div class="soundcloud_text">
+							<p class="text1">Scorpions</p>
+							<p class="text2">Winds of changes</p>
+						</div> -->
 					</div>
+					<!-- <div class="soundcloud_2">
+					
+					</div -->
 				</header>
 			</div>	 
 		</section>
