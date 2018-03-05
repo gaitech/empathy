@@ -91,12 +91,3 @@ function empathy_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'empathy_widgets_init' );
-
-
-// function include google font 
-function wpb_add_google_fonts() {
-wp_enqueue_style( 'custom-font', 'fonts/Helvetica Neue.ttf', false );
-wp_enqueue_style( 'custom-font', 'fonts/Georgia.ttf', false );
-}	
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
-
