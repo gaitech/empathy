@@ -38,18 +38,25 @@
 						</div>
 					</div>
 					<div class="soundcloud_2">
-						<div class="music_player">
-							<div class="music_player__img">
-								<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/02/play_music.jpg">
+						<?php 
+						$data = json_decode(file_get_contents('http://ip-api.io/api/json'));
+						$country_code = $data->country_code;
+
+						if($country_code == 'IN') { ?>
+						    <p><?php if ( is_active_sidebar( 'sidebar-9' ) ) { ?>
+							    <div class="widget-column footer-widget-9">
+								    <?php dynamic_sidebar( 'sidebar-9' ); ?>
+							    </div>
+							    <?php } ?>
+						    </p>
+					    <?php } else { ?>
+						<p><?php if ( is_active_sidebar( 'sidebar-10' ) ) { ?>
+							<div class="widget-column footer-widget-10">
+								<?php dynamic_sidebar( 'sidebar-10' ); ?>
 							</div>
-							<div class="play_time">
-								<p>04:36 / 05:16</p>
-							</div>
-						</div>
-						<div class="channel_button">
-							<p>TEN Sense</p>
-							<button>ON</button>
-						</div>
+							<?php } ?>
+						</p>
+						<?php } ?>
 					</div>
 				</header>
 			</div>	 

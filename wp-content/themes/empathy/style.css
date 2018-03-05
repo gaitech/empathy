@@ -20,7 +20,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-family: Helvetica Neue;
   src: url(fonts/Helvetica Neue.ttf);
 }
-
+@font-face {
+  font-family: Georgia;
+  src: url(fonts/Georgia.ttf);
+}
 
 
 
@@ -1081,7 +1084,7 @@ figure {
 .right-sidebar   ul li h5 {
   margin: 0 0 0 0;
   font-size: 16px;
-  color: #000;
+  color: #a1a1a1;
   font-weight: 100;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1254,4 +1257,235 @@ figure {
 
 
 
+/* mobile home page */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
 
+  .navigation {
+    width: 100%;
+    display: inline-block;
+    margin: 50px 0 0 0;
+  }
+  .navigation .site_logo {
+    width: 100%;
+    float: none;
+    padding-top: 0;
+    text-align: center;
+  }
+  .navigation .navbar {
+    width: 100%;
+    float: none;
+    position: inherit;
+    text-align: center;
+  }
+  .navbar #country {
+    position: inherit;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .banner_section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .detail_page__contant {
+    margin-top: 30px;
+  }
+  .countries_real__stories .real_stories {
+    width: 100%;
+    margin-left: 0;
+  }
+  figure {
+    margin: 0 15px !important;
+  }
+  .real_stories img {
+    width: 100%;
+    height: auto;
+  }
+  .real_stories p {
+    padding: 0 0 10px 0;
+  }
+  .countries_real__stories .real_stories .content {
+    padding: 0 15px;
+  }  
+  .real_stories .read_more {
+    margin-top: 10px;
+  }
+  .alm-load-more-btn {
+    margin-left: 15px !important;
+  }
+  .about_us__section {
+    margin-top: 50px;
+  }
+  .about_us__section .about_empathy p {
+    padding: 0 15px;
+  }
+
+  .footer_section .logo_footer {
+    width: 100%;
+  }
+  .footer_section .logo_footer .logo {
+    width: 100%;
+  }
+  .logo_footer .logo img {
+    height: 210px;
+  }
+  .footer_section .logo_footer .txt {
+    width: 100%;
+    margin: 0;
+  }
+  .footer_section .logo_footer .txt p {
+    padding-left: 15px;
+  }
+  .footer_section .menu_footer {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .footer_section .menu_footer .footer_menu {
+    width: 100%;
+  }
+  .footer_section .menu_footer .footer_menu2 {
+    width: 100%;
+  }
+
+/*... mobile about page...*/
+  .body_content .container .banner .world_text p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 15px;
+  }
+  .slideshow-container {
+    margin: 0 15px;
+  }
+  .dotslider {
+    height: 50px;
+    padding: 16px 0 0 0;
+    font-size: 12px;
+  }
+  .our_mission {
+    margin-top: 50px;
+  }
+  .body_content .container .banner .our_mission .our_goals {
+    width: 100%;
+  }
+  .body_content .container .banner .our_mission .our_goals h1::after {
+    right: 150px;
+  }
+  .body_content .container .banner .our_mission .our_goals p {
+    width: 100%;
+    padding: 0 15px 30px 15px;
+  }
+  .our_team__section {
+    margin-top: 0;
+  }
+  .body_content .our_team__section .our_team__heading h1 {
+    font-size: 40px;
+  }
+  .body_content .our_team__section .our_team__block .team_blocks {
+    width: 100%;
+  }
+  .gratitude_heading h1 {
+    font-size: 40px;
+    padding: 0 15px;
+  }
+  .gratitude_heading p {
+    padding: 0 15px;
+  }
+  .gratitude_member__block {
+    padding-top: 0;
+  }
+  .gratitude_member__name {
+    padding-top: 30px;
+  }
+  .member_name {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+/*... mobile detail page...*/
+  .detail_banner__contant {
+    margin: 0 0 30px 0;
+  }
+  .members_heading h1 {
+    font-size: 40px;
+    padding: 0 15px;
+  }
+  .members_heading p {
+    padding-left: 15px;
+  }
+  .left-sidebar {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+  }
+  .leadership_contant p {
+    font-size: 14px;
+  }
+  .Organization_contant p {
+    font-size: 14px;
+  }
+  .right-sidebar {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  .our_youtube__video {
+    margin-bottom: 0;
+  }
+  .members_video__speach {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .video {
+    width: 100%;
+    margin: 0;
+  }
+  .video iframe {
+    margin: 0;
+  }
+  .video h2 {
+    padding: 0 0;
+  }
+  .article_heading {
+    margin-bottom: 0px;
+  }
+  .article_heading h2 {
+    padding: 0 15px;
+  }
+  .article_blocks {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .article_blocks h2 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .article_blocks p {
+    padding: 10px 15px 0 15px;;
+  }
+  .article_block .article_blocks a {
+    padding: 0 15px;
+  }
+  .ten_members__profile {
+    margin-top: 0px;
+  }
+  .profile {
+    width: 100%;
+  }
+  .porfife_pic {
+    width: 100%;
+  }
+  .profile_details {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .Organization_about {
+    width: 100%;
+    padding: 50px 15px 0 15px;
+  }
+}
