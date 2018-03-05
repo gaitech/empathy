@@ -48,7 +48,6 @@
 							<?php } ?>
 						</p>
 						<?php } ?>
-						</div>
 					</div>
 				</header>
 			</div>	 
