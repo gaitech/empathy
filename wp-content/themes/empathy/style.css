@@ -1309,7 +1309,10 @@ figure {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  .partners_img figure {
+    margin: 0 !important;
+  }
+  
   /*... mobile detail page...*/
   .detail_banner__contant {
     margin: 0 0 30px 0;
