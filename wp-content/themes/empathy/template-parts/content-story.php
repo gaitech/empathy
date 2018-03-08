@@ -407,15 +407,20 @@
 						<div class="ten_members__profile">
 							<div class="members_profile">
 								<div class="profile">
-									<div class="porfife_pic">
+									<?php $user_info = get_userdata(1);
+
+                                      // echo 'Username: ' . $user_info->user_login . "</br>";        
+                                      // echo get_avatar(get_the_author_meta( 'ID' ), 156);
+									?>
+									<div class="porfifvaluee_pic">
 										<figure>
-											<img src="<?php echo $contributor_img; ?>">
+											<?php echo get_avatar(get_the_author_meta( 'ID' ), 156); ?>
 										</figure>
 									</div>
 									<div class="profile_details">
 										<span>WRITTEN BY</span>
-										<h3><?php echo $contributor_name; ?></h3>
-										<p><?php echo $contributor_description; ?></p>
+										<h3><?php echo get_the_author_meta('nickname'); ?></h3>
+										<p><?php echo get_the_author_meta( 'contributor_description' ); ?></p>
 									</div>
 								</div>
 							</div>

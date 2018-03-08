@@ -100,3 +100,38 @@ wp_enqueue_style( 'custom-font', 'fonts/Georgia.ttf', false );
 }	
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
+
+
+
+// user fields
+
+function fb_add_custom_user_profile_fields( $user ) {
+?>
+	<h3><?php _e('Extra Profile Information', 'your_textdomain'); ?></h3>
+	
+	<table class="form-table">
+		<tr>
+			<th>
+				<label for="contributor_description"><?php _e('Contributor Description', 'your_textdomain'); ?>
+			</label></th>
+			<td>
+				<input type="text" name="contributor_description" id="contributor_description" value="<?php echo esc_attr( get_the_author_meta( 'contributor_description', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description"><?php _e('Please enter your Contributor Description.', 'your_textdomain'); ?></span>
+			</td>
+		</tr>
+	</table>
+<?php }
+
+function fb_save_custom_user_profile_fields( $user_id ) {
+	
+	if ( !current_user_can( 'edit_user', $user_id ) )
+		return FALSE;
+	
+	update_usermeta( $user_id, 'contributor_description', $_POST['contributor_description'] );
+}
+
+add_action( 'show_user_profile', 'fb_add_custom_user_profile_fields' );
+add_action( 'edit_user_profile', 'fb_add_custom_user_profile_fields' );
+
+add_action( 'personal_options_update', 'fb_save_custom_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'fb_save_custom_user_profile_fields' );
