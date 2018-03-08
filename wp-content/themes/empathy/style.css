@@ -33,7 +33,6 @@ body {
   margin: 0;
 }
 
-
 .header_section {
   background-color: #4d4d4d;
 }
@@ -501,351 +500,312 @@ figure {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-/*.dot {
+.mySlides.fade:nth-child(2) {
+  display: none;
+}
+.mySlides.fade:nth-child(3) {
+  display: none;
+}
+.mySlides.fade:nth-child(4) {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/* About Page   */
+.body_content {
+  width: 100%;
+  clear: both;
+}
+
+.body_content .container .banner {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.body_content .container .banner .world_text {
+  padding-bottom: 0;
+}
+
+.body_content .container .banner .world_text p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0;
+  font-family: 'Georgia';
+  color: #000000;
+}
+.world_text #text-9 {
+  padding: 0 0 18px 0;
+}
+
+/*Slider css*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* About Page   */
+.body_content {
+  width: 100%;
+  clear: both;
+}
+
+.body_content .container .banner {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/*Slider css*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*Slider button*/
+.slideshow-container {
+  max-width: 100%;
+}
+.slider-button {
+  width: 100%;
+  float: left;
+  position: relative;
+  bottom: 6px;
+  text-align: center;
+  margin-top: -1px
+}
+.slider-button a {
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 26px 0 0 0;
+  display: block;
+  font-weight: 100;
+}
+
+.dotslider {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+  height: 110px;
+  width: 25%;
+  background-color: #DB3502;
   transition: background-color 0.6s ease;
-  }*/
+  float: left;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 25px 0 0 0;
+  display: block;
+  font-weight: 100;
+}
+.dotslider:nth-of-type(2) {   
+  background-color: #fb5900;
+}
+.dotslider:nth-of-type(3) {
+  background-color: #ed8b18;
+}
+.dotslider:nth-of-type(4) {   
+  background-color: #fba300;
+}
+.dotslider.active, .dotslider:hover {
+  background-color: #b52129;
+  color: #fff;
+}
 
-  .mySlides.fade:nth-child(2) {
-    display: none;
-  }
-  .mySlides.fade:nth-child(3) {
-    display: none;
-  }
-  .mySlides.fade:nth-child(4) {
-    display: none;
-  }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 
-  /* About Page   */
+.body_content .container .banner .our_mission {
+  width: 100%;
+  display: inline-block;
+  margin-top: 50px;
+  padding-top: 50px;
+}
 
+.body_content .container .banner .our_mission .our_goals {
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+}
 
+.body_content .container .banner .our_mission .our_goals h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ed8b18;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Helvetica Neue';
+}
 
-  .body_content {
-    width: 100%;
-    clear: both;
-  }
-
-  .body_content .container .banner {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-
-  .body_content .container .banner .world_text {
-    padding-bottom: 0;
-  }
-
-  .body_content .container .banner .world_text p {
-    text-align: center;
-    font-size: 20px;
-    line-height: 40px;
-    margin: 0;
-    font-family: 'Georgia';
-    color: #000000;
-  }
-  .world_text #text-9 {
-    padding: 0 0 18px 0;
-  }
-
-  /*Slider css*/
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Caption text */
-/*.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+.body_content .container .banner .our_mission .our_goals h1::after {
+  content: "";
+  font-weight: bold;
   position: absolute;
-  bottom: 8px;
-  width: 30%;
-  text-align: left;
-  left: 50%;
-  }*/
-
-  /* About Page   */
-
-
-
-  .body_content {
-    width: 100%;
-    clear: both;
-  }
-
-  .body_content .container .banner {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-
-  /*Slider css*/
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Caption text */
-/*.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 30%;
-  text-align: left;
-  left: 50%;
-  }*/
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  /*Slider button*/
-  .slideshow-container {
-    max-width: 100%;
-  }
-  .slider-button {
-    width: 100%;
-    float: left;
-    position: relative;
-    bottom: 6px;
-    text-align: center;
-    margin-top: -1px
-  }
-  .slider-button a {
-    color: #fff;
-    font-size: 32px;
-    text-decoration: none;
-    padding: 26px 0 0 0;
-    display: block;
-    font-weight: 100;
-  }
-  
-  .dotslider {
-    cursor: pointer;
-    height: 110px;
-    width: 25%;
-    background-color: #DB3502;
-    transition: background-color 0.6s ease;
-    float: left;
-    color: #fff;
-    font-size: 32px;
-    text-decoration: none;
-    padding: 25px 0 0 0;
-    display: block;
-    font-weight: 100;
-  }
-  .dotslider:nth-of-type(2) {   
-    background-color: #fb5900;
-  }
-  .dotslider:nth-of-type(3) {
-    background-color: #ed8b18;
-  }
-  .dotslider:nth-of-type(4) {   
-    background-color: #fba300;
-  }
-  .dotslider.active, .dotslider:hover {
-    background-color: #b52129;
-    color: #fff;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-
-
-  .body_content .container .banner .our_mission {
-    width: 100%;
-    display: inline-block;
-    margin-top: 50px;
-    padding-top: 50px;
-  }
-
-  .body_content .container .banner .our_mission .our_goals {
-    width: 33.333333%;
-    float: left;
-    text-align: center;
-  }
-
-  .body_content .container .banner .our_mission .our_goals h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ed8b18;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-    position: relative;
-    font-family: 'Helvetica Neue';
+  top: 50px;
+  right: 180px;
+  width: 30px;
+  border: 1px solid #e1e1e1;
 }
 
-  .body_content .container .banner .our_mission .our_goals h1::after {
-    content: "";
-    font-weight: bold;
-    position: absolute;
-    top: 50px;
-    right: 180px;
-    width: 30px;
-    border: 1px solid #e1e1e1;
-  }
-
-  .body_content .container .banner .our_mission .our_goals p {
-    margin: 0 0 0 0;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 20px 30px 0 30px;
-    width: 75%;
-    margin: 0 auto;
-    color: #000000;
-    font-family: 'Georgia';
+.body_content .container .banner .our_mission .our_goals p {
+  margin: 0 0 0 0;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 20px 30px 0 30px;
+  width: 75%;
+  margin: 0 auto;
+  color: #000000;
+  font-family: 'Georgia';
 }
 
-  .body_content .our_team__section {
-    background-color: #d0eaf1;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .body_content .our_team__section .our_team__heading h1 {
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 60px;
-    color: #808080;
-    padding: 50px 0;
-    font-family: 'Helvetica Neue';
+.body_content .our_team__section {
+  background-color: #d0eaf1;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-  .body_content .our_team__section .our_team__block {
-    width: 100%;
-    display: inline-block;
-    padding-bottom: 50px;
-  }
-
-  .body_content .our_team__section .our_team__block .team_blocks {
-    width: 25%;
-    float: left;
-    text-align: center;
-  }
-
-  .body_content .our_team__section .our_team__block .team_blocks h4 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .body_content .our_team__section .our_team__block .team_blocks h4 a {
-    color: #000000;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 100;
-    font-size: 12px;
-    font-family: 'Georgia';
+.body_content .our_team__section .our_team__heading h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 60px;
+  color: #808080;
+  padding: 50px 0;
+  font-family: 'Helvetica Neue';
 }
-  .team_member__img img {
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-  }
+
+.body_content .our_team__section .our_team__block {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 50px;
+}
+
+.body_content .our_team__section .our_team__block .team_blocks {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.body_content .our_team__section .our_team__block .team_blocks h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.body_content .our_team__section .our_team__block .team_blocks h4 a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 12px;
+  font-family: 'Georgia';
+}
+.team_member__img img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
 
 
-  .body_content .our_team__section .our_team__block .team_blocks .social_link img {
-    padding-top: 8px;
-    height: 30px;
-  }
+.body_content .our_team__section .our_team__block .team_blocks .social_link img {
+  padding-top: 8px;
+  height: 30px;
+}
 
-  .social_link {
-    padding: 0 0 40px 0px;
-  }
+.social_link {
+  padding: 0 0 40px 0px;
+}
 
-  .body_content .team_member__signature {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+.body_content .team_member__signature {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-  .body_content .team_member__signature .member_signature img {
-    width: 100%;
-  }
+.body_content .team_member__signature .member_signature img {
+  width: 100%;
+}
 
-  .body_content .our_officel__partners {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #dcdcdc;
-    border-top: 1px solid #dcdcdc;
-  }
+.body_content .our_officel__partners {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid #dcdcdc;
+}
 
-  .body_content .our_officel__partners .our_associations {
-   padding-top: 50px;
-   padding-bottom: 50px;
-   margin-top: 50px;
-   margin-bottom: 50px;
- }
+.body_content .our_officel__partners .our_associations {
+ padding-top: 50px;
+ padding-bottom: 50px;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
 
- .body_content .our_officel__partners .our_associations .our_associations__heading {
+.body_content .our_officel__partners .our_associations .our_associations__heading {
   margin-bottom: 50px;
 }
 
@@ -1183,10 +1143,10 @@ figure {
   padding: 50px 0 0 0;
 }
 .Organization_about p {
-    text-align: center;
-    line-height: 24px;
-    font-size: 12px;
-    font-family: 'Georgia';
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  font-family: 'Georgia';
 }
 .Organization_about a {
   color: #3a83f4;
@@ -1219,6 +1179,9 @@ figure {
     padding-top: 0;
     text-align: center;
   }
+  .navigation .site_logo img {
+    height: 150px !important;
+  }
   .navigation .navbar {
     width: 100%;
     float: none;
@@ -1232,10 +1195,6 @@ figure {
     margin-bottom: 30px;
   }
 
-  .banner_section {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
   .detail_page__contant {
     margin-top: 30px;
   }
@@ -1276,7 +1235,7 @@ figure {
     width: 100%;
   }
   .logo_footer .logo img {
-    height: 210px;
+    height: 150px;
   }
   .footer_section .logo_footer .txt {
     width: 100%;
@@ -1296,11 +1255,14 @@ figure {
     width: 100%;
   }
 
-/*... mobile about page...*/
+  /*... mobile about page...*/
   .body_content .container .banner .world_text p {
     font-size: 16px;
     line-height: 28px;
     padding: 0 15px;
+  }
+  .mySlides.fade {
+    margin: 0 15px;
   }
   .slideshow-container {
     margin: 0 15px;
@@ -1311,20 +1273,20 @@ figure {
     font-size: 12px;
   }
   .our_mission {
-    margin-top: 50px;
+    padding-top: 0 !important;
   }
   .body_content .container .banner .our_mission .our_goals {
     width: 100%;
   }
   .body_content .container .banner .our_mission .our_goals h1::after {
-    right: 150px;
+    right: 170px;
   }
   .body_content .container .banner .our_mission .our_goals p {
     width: 100%;
     padding: 0 15px 30px 15px;
   }
   .our_team__section {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   .body_content .our_team__section .our_team__heading h1 {
     font-size: 40px;
@@ -1350,8 +1312,11 @@ figure {
     padding-left: 15px;
     padding-right: 15px;
   }
-
-/*... mobile detail page...*/
+  .partners_img figure {
+    margin: 0 !important;
+  }
+  
+  /*... mobile detail page...*/
   .detail_banner__contant {
     margin: 0 0 30px 0;
   }
@@ -1369,9 +1334,11 @@ figure {
   }
   .leadership_contant p {
     font-size: 14px;
+    width: 100%;
   }
   .Organization_contant p {
     font-size: 14px;
+    width: 100%;
   }
   .right-sidebar {
     width: 100%;
@@ -1394,6 +1361,9 @@ figure {
   }
   .video h2 {
     padding: 0 0;
+  }
+  .member_article {
+    margin-top: 30px;
   }
   .article_heading {
     margin-bottom: 0px;
