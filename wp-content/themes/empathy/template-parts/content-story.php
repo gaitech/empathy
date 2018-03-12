@@ -3,8 +3,6 @@
 		        $cat_info = get_the_category( $id );
 		        $cat_info = $cat_info[0]->name;
 		        $postData = get_post( $id );
-		      //echo "<pre>";
-		      //print_r($postData);
 				$name = $postData->post_title;
 				$content = $postData->post_content; 
 				$url = get_post_permalink( $id);
@@ -407,14 +405,14 @@
 						<div class="ten_members__profile">
 							<div class="members_profile">
 								<div class="profile">
-									<?php $user_info = get_userdata(1);
-
-                                      // echo 'Username: ' . $user_info->user_login . "</br>";        
-                                      // echo get_avatar(get_the_author_meta( 'ID' ), 156);
+									<?php 
+									 $author_id = $postData->post_author;
+									 global $wpdb;
+                                     $imageURL = $wpdb->get_results("SELECT meta_value from wp_usermeta WHERE meta_key = 'image' and user_id =". $author_id);
 									?>
-									<div class="porfifvaluee_pic">
+									<div class="porfife_pic">
 										<figure>
-											<?php echo get_avatar(get_the_author_meta( 'ID' ), 156); ?>
+											<img src="<?php echo $imageURL[0]->meta_value; ?>">
 										</figure>
 									</div>
 									<div class="profile_details">
